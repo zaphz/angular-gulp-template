@@ -1,0 +1,65 @@
+// For use by the to-do component.  Any .less at any level of your component
+// hierarchy get's pulled together by the main.less.  It's not automatic;
+// you need to list it explicitly, which makes it easy to see that styles
+// are applied at the right time.
+.done-true {
+  color: grey;
+  text-decoration: line-through;
+}
+.order{
+    .row{
+        line-height: 50px;
+    }
+}
+
+
+
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/
+.well[ui-view]{
+ height: 65px;
+}
+
+.ui-view-container {
+  position: relative;
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+  /*padding-left: 0px;*/
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  /*padding-left: 100px;*/
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
+}

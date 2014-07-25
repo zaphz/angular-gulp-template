@@ -22,6 +22,7 @@ module.exports =
       "vendor/bower/angular-cookies/angular-cookies.js"
       "vendor/bower/angular-resource/angular-resource.js"
       "vendor/bower/angular-sanitize/angular-sanitize.js"
+      "vendor/bower/angular-animate/angular-animate.js"
       "vendor/bower/restangular/dist/restangular.js"
       "vendor/bower/angular-translate/angular-translate.js"
       "vendor/bower/d3/d3.js"
