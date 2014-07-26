@@ -55,6 +55,7 @@
 
 // Import specific stylesheets from components
 @import 'app/components/order-app/order/order.less';
+@import 'app/components/order-app/payment/payment.less';
 
 // Import project mixins and variables (for overrides)
 @import 'app/stylesheets/variables.less';
@@ -63,3 +64,10 @@
 // Angular-UI workaround (see CSS section of Angular-UI homepage)
 // TODO: Move these to mixins.less
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+/*! */
+// Response
+// -------------------------
+@phone: ~'(max-width:640px)';
+@pad: ~'(min-width:641px) and (max-width:768px)';
+@pc:~'(min-width:769px) and (max-width:1280px)';
+@wide:~'(min-width:1281px)';

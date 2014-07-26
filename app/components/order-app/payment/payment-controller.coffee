@@ -4,5 +4,8 @@ angular.module("SampleApp").controller "paymentController", [
   'Restangular'
   ($scope, $http, Restangular) ->
 
-   console.log
-  ]
+    $scope.selectedCardName = 'visa'
+    $scope.selectedCard = (cardName) ->
+      $scope.selectedCardName = cardName
+
+]

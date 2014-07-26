@@ -11,8 +11,9 @@ module.exports =
     stylesheets: "app/stylesheets/main.less"
     templates: "app/components/**/*.html"
     images: [
-      "app/**/images/*.*"
+      "app/components/order-app/images/credit_card/*.*"
     ]
+
   vendor:
     scripts: [
       "vendor/bower/lodash/dist/lodash.js"
@@ -27,6 +28,7 @@ module.exports =
       "vendor/bower/angular-translate/angular-translate.js"
       "vendor/js/**/*.js"
     ]
+    stylesheets: []
     images: []
     fonts: 'vendor/bower/bootstrap/fonts/*'
   tests: "app/**/*_test.coffee"

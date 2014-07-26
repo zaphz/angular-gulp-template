@@ -1,14 +1,13 @@
 <h4>Payment</h4>
 <hr/>
-
-<img src="order-app/images/credit_card/visa.png" alt="Visa" height="40" width="60">
-
-<img src="/static/admin/images/credit_card/master.png" alt="Master Card" height="40" width="60">
-<img src="/static/admin/images/credit_card/ae.png" alt="American Express" height="40" width="60">
-<img src="/static/admin/images/credit_card/jcb.png" alt="JCB" height="40" width="60">
-<img src="/static/admin/images/credit_card/discover.png" alt="Discover" height="40" width="60">
-
-
+<div class="card">
+    <img src="/images/visa.png" alt="Visa" data-ng-class="{card_select:selectedCardName==='visa'}" data-ng-click="selectedCard('visa')">
+    <img src="/images/master.png" alt="Master Card" data-ng-class="{card_select:selectedCardName==='master'}" data-ng-click="selectedCard('master')">
+    <img src="/images/ae.png" alt="American Express" data-ng-class="{card_select:selectedCardName==='ae'}" data-ng-click="selectedCard('ae')">
+    <img src="/images/jcb.png" alt="JCB" data-ng-class="{card_select:selectedCardName==='jcb'}" data-ng-click="selectedCard('jcb')">
+    <img src="/images/discover.png" alt="Discover" data-ng-class="{card_select:selectedCardName==='discover'}" data-ng-click="selectedCard('discover')">
+</div>
+<hr/>
 <div class="row">
     <div class="col-md-3 col-md-offset-9 col-sm-3 col-sm-offset-9 col-xs-12">
 
@@ -17,3 +16,4 @@
 </div>
 
 <hr/>
+
