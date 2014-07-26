@@ -33,12 +33,12 @@ angular.module("SampleApp").config ($stateProvider, $urlRouterProvider, $transla
   $stateProvider
     .state 'order',
       url: "/order"
-      templateUrl: "angular-ui-sample-component/order/todo-main.html"
+      templateUrl: "order-app/order/order-main.html"
       controller: "orderController"
 
     .state 'payment',
       url: '/payment'
-      templateUrl: "angular-ui-sample-component/payment/payment.html"
-      controller: "ChartController"
+      templateUrl: "order-app/payment/payment.html"
+      controller: "paymentController"
 
   return

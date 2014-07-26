@@ -4,5 +4,5 @@ angular.module("SampleApp").controller "orderController", [
   'Restangular'
   ($scope, $http, Restangular) ->
 
-   console.log 1
+   console.log
   ]

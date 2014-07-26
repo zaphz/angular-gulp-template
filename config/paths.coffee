@@ -25,13 +25,7 @@ module.exports =
       "vendor/bower/angular-animate/angular-animate.js"
       "vendor/bower/restangular/dist/restangular.js"
       "vendor/bower/angular-translate/angular-translate.js"
-      "vendor/bower/d3/d3.js"
-      "vendor/bower/nvd3/nv.d3.js"
-      "vendor/bower/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"
       "vendor/js/**/*.js"
-    ]
-    stylesheets: [
-      "vendor/bower/nvd3/nv.d3.css"
     ]
     images: []
     fonts: 'vendor/bower/bootstrap/fonts/*'
